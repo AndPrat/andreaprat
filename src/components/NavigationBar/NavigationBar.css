@@ -1,0 +1,25 @@
+.navigation {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+.navigation__list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.navigation__link {
+  margin: 10px;
+  text-align: center;
+}
+
+.navigation__link.active {
+  color: #4056a1;
+}
+
+.navigation__link__inactive {
+  color: #d79922;
+}

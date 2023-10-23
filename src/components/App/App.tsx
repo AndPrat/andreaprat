@@ -1,5 +1,7 @@
+import NavigationBar from "../NavigationBar/NavigationBar";
+
 const App = (): React.ReactElement => {
-  return <p></p>;
+  return <NavigationBar />;
 };
 
 export default App;
