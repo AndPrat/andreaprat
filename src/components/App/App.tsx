@@ -1,7 +1,13 @@
+import Header from "../Header/Header";
 import NavigationBar from "../NavigationBar/NavigationBar";
 
 const App = (): React.ReactElement => {
-  return <NavigationBar />;
+  return (
+    <div className="container">
+      <Header />
+      <NavigationBar />
+    </div>
+  );
 };
 
 export default App;
