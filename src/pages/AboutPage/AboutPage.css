@@ -1,0 +1,16 @@
+.about-page {
+  margin: 100px;
+}
+
+.about-page__title {
+  font-size: 3rem;
+  font-family: var(--font-titles);
+  letter-spacing: 5px;
+  color: #d79922;
+}
+
+.about-page__information {
+  width: 370px;
+  font-size: 1.2rem;
+  color: #4056a1;
+}
