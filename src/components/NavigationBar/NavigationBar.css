@@ -17,9 +17,9 @@
 }
 
 .navigation__link.active {
-  color: #4056a1;
+  color: var(--color-violet-dark);
 }
 
 .navigation__link__inactive {
-  color: #d79922;
+  color: var(--color-yellow);
 }

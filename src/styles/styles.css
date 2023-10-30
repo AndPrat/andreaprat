@@ -1,6 +1,9 @@
 :root {
   --font-titles: "Abril Fatface", sans-serif;
   --font-text: "Lato", sans-serif;
+  --color-violet-dark: #4056a1;
+  --color-violet-light: #9aa6c9;
+  --color-yelow: #d79922;
 }
 
 *,
@@ -44,4 +47,15 @@ a {
 
 input {
   font: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
