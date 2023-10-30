@@ -4,10 +4,11 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import paths from "../../routers/paths/paths";
 import { Suspense } from "react";
 import { LazyAboutPage } from "../../pages/LazyPages/LazyPages";
+import Footer from "../Footer/Footer";
 
 const App = (): React.ReactElement => {
   return (
-    <div className="container">
+    <div className="content">
       <Header />
       <NavigationBar />
       <Routes>
@@ -20,6 +21,7 @@ const App = (): React.ReactElement => {
           }
         />
       </Routes>
+      <Footer />
     </div>
   );
 };
