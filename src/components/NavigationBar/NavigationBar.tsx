@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./NavigationBar.css";
+import paths from "../../routers/paths/paths";
 
 const NavigationBar = (): React.ReactElement => {
   return (
@@ -12,7 +13,7 @@ const NavigationBar = (): React.ReactElement => {
           <NavLink to="" className="navigation__link">
             Code
           </NavLink>
-          <NavLink to="" className="navigation__link">
+          <NavLink to={paths.aboutPage} className="navigation__link">
             About
           </NavLink>
           <NavLink to="" className="navigation__link">
