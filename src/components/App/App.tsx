@@ -1,16 +1,14 @@
-import { Route, Routes } from "react-router-dom";
-import Header from "../Header/Header";
-import NavigationBar from "../NavigationBar/NavigationBar";
-import paths from "../../routers/paths/paths";
 import { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
 import { LazyAboutPage } from "../../pages/LazyPages/LazyPages";
+import paths from "../../routers/paths/paths";
 import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
 const App = (): React.ReactElement => {
   return (
     <div className="content">
       <Header />
-      <NavigationBar />
       <Routes>
         <Route
           path={paths.aboutPage}
