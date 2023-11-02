@@ -1,6 +1,7 @@
 .header {
   display: flex;
-  margin: 25px;
+  padding: 25px;
+  align-items: center;
 }
 
 .header__text {
@@ -8,4 +9,6 @@
   color: #d79922;
   font-family: var(--font-titles);
   letter-spacing: 1.2px;
+  width: auto;
+  white-space: nowrap;
 }
