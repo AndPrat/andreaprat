@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import "./AboutPage.css";
 import { iconDiamond } from "../../icons/icons";
+import Button from "../../components/Button/Button";
 
 const AboutPage = (): React.ReactElement => {
   return (
@@ -34,7 +35,7 @@ const AboutPage = (): React.ReactElement => {
                 Look for a designer with a broad skill set ranging from
                 developer web to graphic design & illustration.
               </p>
-              <button className="button button__gradient">{`Let's talk!`}</button>
+              <Button className="button button__gradient">{`Let's talk!`}</Button>
             </div>
           </div>
         </div>
