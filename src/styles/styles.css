@@ -4,6 +4,13 @@
   --color-violet-dark: #4056a1;
   --color-violet-light: #9aa6c9;
   --color-yellow: #d79922;
+  --color-redYellowGradient: linear-gradient(330deg, #fff59a 20%, #ff6d6d 100%);
+  --color-blueGreenGradient: linear-gradient(
+    150deg,
+    #569aff 10.21%,
+    #88dfab 84.57%
+  );
+  --color-button: #363645;
 }
 
 *,
