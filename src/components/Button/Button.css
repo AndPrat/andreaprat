@@ -1,0 +1,17 @@
+.button__gradient {
+  background: var(--color-blueGreenGradient);
+  border-radius: 6px;
+  border: none;
+  color: var(--color-button);
+  width: 100px;
+  margin: 30px;
+  padding: 10px;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.button__gradient:hover {
+  background: var(--color-redYellowGradient);
+  margin: 30px;
+  padding: 10px;
+}
