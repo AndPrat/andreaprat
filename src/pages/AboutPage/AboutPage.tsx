@@ -23,7 +23,7 @@ const AboutPage = (): React.ReactElement => {
             <div className="about-page__block--mini">
               <h2 className="about-page__title">About me</h2>
               <p className="about-page__information">
-                {`Hello! I'm Andrea Prat, a creative frontend developer & graphic desing
+                {`Hello! I'm Andrea Prat, a creative frontend developer & graphic designer
           and illustrator w/ a focus on creative project design.`}
               </p>
             </div>
@@ -33,23 +33,31 @@ const AboutPage = (): React.ReactElement => {
               </h2>
               <p className="about-page__information">
                 Look for a designer with a broad skill set ranging from
-                developer web to graphic design & illustration.
+                developer web to graphic designer & illustration.
               </p>
               <Button className="button button__gradient">{`Let's talk!`}</Button>
             </div>
           </div>
         </div>
-        <div className="container">
-          <h4 className="about-page__title-important">
-            {iconDiamond} Main skills
-          </h4>
-          <p className="about-page__information-important">
-            React.js • Redux.js • TypeScript • Unit Test • Graphic design •
-            Adobe Package • Procreate
-          </p>
+        <div className="container container--flex about-page__container">
+          <div className="about-page__block">
+            <h4 className="about-page__title-important">
+              {iconDiamond} Main skills
+            </h4>
+            <p className="about-page__information-important">
+              React.js • Redux.js • TypeScript • Unit Test • Graphic design •
+              Adobe Package • Procreate
+            </p>
+          </div>
         </div>
-        <div className="container">
-          <h3 className="about-page__title-secction-secundary">Mini CV</h3>
+        <div className="container container--flex about-page__container">
+          <div className="about-page__block">
+            <h3 className="about-page__title-secction-secundary">Mini CV</h3>
+            <a
+              className="button button__gradient"
+              href="https://www.linkedin.com/in/andreaprat/"
+            >{`Linkedin`}</a>
+          </div>
         </div>
       </div>
     </>
