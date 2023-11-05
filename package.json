@@ -17,8 +17,11 @@
     "@fontsource/abril-fatface": "^5.0.17",
     "@fontsource/lato": "^5.0.17",
     "@reduxjs/toolkit": "^1.9.5",
+    "@types/helmet": "^4.0.0",
+    "@types/react-helmet": "^6.1.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-redux": "^8.1.2",
     "react-router-dom": "^6.17.0"
   },

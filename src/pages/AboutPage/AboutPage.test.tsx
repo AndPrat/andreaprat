@@ -18,4 +18,17 @@ describe("Given a AboutPage component", () => {
       expect(heading).toBeInTheDocument();
     });
   });
+  test("Then it should show a image with the alt text 'Andrea Polaroiod photos'", () => {
+    const expectImageAlt = "Andrea Polaroiod photos";
+
+    render(
+      <BrowserRouter>
+        <AboutPage />
+      </BrowserRouter>,
+    );
+
+    const imageAlt = screen.getByAltText(expectImageAlt);
+
+    expect(imageAlt).toBeInTheDocument();
+  });
 });

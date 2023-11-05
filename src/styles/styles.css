@@ -3,7 +3,7 @@
   --font-text: "Lato", sans-serif;
   --color-violet-dark: #4056a1;
   --color-violet-light: #9aa6c9;
-  --color-yelow: #d79922;
+  --color-yellow: #d79922;
 }
 
 *,
@@ -58,4 +58,8 @@ p {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 25px;
+}
+
+.container--flex {
+  display: flex;
 }
