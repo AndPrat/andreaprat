@@ -10,7 +10,7 @@
     #569aff 10.21%,
     #88dfab 84.57%
   );
-  --color-button: #363645;
+  --color-violet-more-dark: #363645;
 }
 
 *,
@@ -69,4 +69,5 @@ p {
 
 .container--flex {
   display: flex;
+  flex-wrap: wrap;
 }
