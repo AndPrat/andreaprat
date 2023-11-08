@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet";
 import Typewriter from "typewriter-effect";
 import "./HomePage.css";
+import Marquee from "react-fast-marquee";
+import Day from "../../components/Day/Day";
 
 const HomePage = (): React.ReactElement => {
   return (
@@ -48,7 +50,11 @@ const HomePage = (): React.ReactElement => {
             </div>
           </div>
           <div className="home-page__block">
-            <div className="home-page__block--mini"></div>
+            <div className="home-page__block--mini">
+              <Marquee>
+                <Day />
+              </Marquee>
+            </div>
           </div>
           <div className="home-page__block">
             <div className="home-page__block--mini">
