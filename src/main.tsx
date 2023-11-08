@@ -1,5 +1,6 @@
 import "@fontsource/abril-fatface";
 import "@fontsource/lato";
+import "@fontsource/rubik-mono-one";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
