@@ -1,0 +1,35 @@
+.contact-page {
+  padding: 100px 0;
+}
+
+.contact-page__title-secction {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: var(--color-yellow);
+  padding: 70px 0 8px 0;
+}
+
+.contact-page__title {
+  font-size: 3rem;
+  font-family: var(--font-titles);
+  letter-spacing: 5px;
+  color: var(--color-violet-dark);
+  padding-bottom: 15px;
+}
+
+.contact-page__information {
+  width: 370px;
+  font-size: 1.1rem;
+  color: var(--color-violet-dark);
+  padding: 10px 0 20px 0;
+}
+
+.contact-page__title-important {
+  font-size: 1.1rem;
+  color: var(--color-violet-more-dark);
+  display: flex;
+  align-items: center;
+  font-weight: 700px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
