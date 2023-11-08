@@ -1,6 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage";
+import { beforeAll } from "vitest";
+
+beforeAll(() => {
+  global.ResizeObserver = class ResizeObserver {
+    observe() {}
+    unobserve() {}
+    disconnect() {}
+  };
+});
 
 describe("Given the HomePage component", () => {
   describe("When it is rendered", () => {
