@@ -13,7 +13,7 @@ const Day = (): React.ReactElement => {
     <div className="day">
       <div className="day__section">
         <h2 className="day__title">
-          TODAY IS {showDay}
+          ✹ TODAY IS {showDay}
           {""} ✹ {""}
           {showTime}
           {""}h

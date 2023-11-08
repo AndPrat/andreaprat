@@ -12,7 +12,7 @@ describe("Given a Day component", () => {
       const showTime =
         today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
-      const expectedtext = `TODAY IS ${showDay} ✹ ${showTime}h`;
+      const expectedtext = `✹ TODAY IS ${showDay} ✹ ${showTime}h`;
 
       render(
         <BrowserRouter>
