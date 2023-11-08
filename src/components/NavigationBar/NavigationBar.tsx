@@ -16,7 +16,7 @@ const NavigationBar = (): React.ReactElement => {
           <NavLink to={paths.aboutPage} className="navigation__link">
             About
           </NavLink>
-          <NavLink to="" className="navigation__link">
+          <NavLink to={paths.contactPage} className="navigation__link">
             Contact
           </NavLink>
         </li>
