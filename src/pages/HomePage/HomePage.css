@@ -1,0 +1,49 @@
+.home-page {
+  padding: 100px 0;
+}
+
+.home-page__container {
+  justify-content: center;
+}
+
+.home-page__block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-page__block--mini {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-page__title {
+  font-size: 1.3rem;
+  font-family: var(--font-titles);
+  letter-spacing: 3px;
+  color: var(--color-violet-dark);
+  padding: 50px 0 20px 0;
+  text-transform: uppercase;
+}
+
+.home-page__salutation {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: var(--color-violet-dark);
+  padding-bottom: 15px;
+}
+
+.home-page__presentation {
+  width: 600px;
+  font-size: 1.3rem;
+  color: var(--color-violet-dark);
+  padding-bottom: 10px;
+}
+
+.home-page__presentation--change {
+  width: 500px;
+  font-size: 1.8rem;
+  color: var(--color-violet-more-dark);
+  padding-bottom: 15px;
+}
