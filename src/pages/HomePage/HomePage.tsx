@@ -51,7 +51,7 @@ const HomePage = (): React.ReactElement => {
           </div>
           <div className="home-page__block">
             <div className="home-page__block--mini">
-              <Marquee>
+              <Marquee autoFill={true}>
                 <Day />
               </Marquee>
             </div>
