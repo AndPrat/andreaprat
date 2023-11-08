@@ -1,6 +1,10 @@
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { LazyAboutPage, LazyHomePage } from "../../pages/LazyPages/LazyPages";
+import {
+  LazyAboutPage,
+  LazyContactPage,
+  LazyHomePage,
+} from "../../pages/LazyPages/LazyPages";
 import paths from "../../routers/paths/paths";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -23,6 +27,14 @@ const App = (): React.ReactElement => {
           element={
             <Suspense>
               <LazyHomePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path={paths.contactPage}
+          element={
+            <Suspense>
+              <LazyContactPage />
             </Suspense>
           }
         />
