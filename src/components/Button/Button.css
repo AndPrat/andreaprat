@@ -15,3 +15,19 @@
   margin: 30px;
   padding: 10px;
 }
+
+.button__gradient--large {
+  background: var(--color-blueGreenGradient);
+  border-radius: 6px;
+  border: none;
+  color: var(--color-violet-more-dark);
+  width: 130px;
+  padding: 10px;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.button__gradient--large:hover {
+  background: var(--color-redYellowGradient);
+  padding: 10px;
+}

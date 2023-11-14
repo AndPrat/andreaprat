@@ -20,6 +20,9 @@ const ContactPage = (): React.ReactElement => {
               <span className="contact-page__title-important">
                 hello@andreaprat.cat
               </span>
+              <div className="contact-page__block">
+                <div className="contact-page__block--mini"></div>
+              </div>
             </div>
           </div>
         </div>
