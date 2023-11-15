@@ -10,7 +10,7 @@ const NavigationBar = (): React.ReactElement => {
           <NavLink to={paths.portfolioPage} className="navigation__link">
             Portfolio
           </NavLink>
-          <NavLink to="" className="navigation__link">
+          <NavLink to={paths.codePage} className="navigation__link">
             Code
           </NavLink>
           <NavLink to={paths.aboutPage} className="navigation__link">
