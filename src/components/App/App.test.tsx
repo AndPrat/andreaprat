@@ -4,8 +4,8 @@ import App from "./App";
 
 describe("Given an App component", () => {
   describe("When it is rendered", () => {
-    test("Then it should show a NavLink with 'Illustration and Design' text", () => {
-      const expectedText = "Illustration and Design";
+    test("Then it should show a NavLink with 'Portfolio' text", () => {
+      const expectedText = "Portfolio";
 
       render(
         <BrowserRouter>
