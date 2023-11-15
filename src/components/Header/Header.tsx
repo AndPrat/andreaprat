@@ -1,10 +1,13 @@
+import paths from "../../routers/paths/paths";
 import NavigationBar from "../NavigationBar/NavigationBar";
 import "./Header.css";
 
 const Header = (): React.ReactElement => {
   return (
     <header className="header">
-      <h1 className="header__text">Andrea Prat</h1>
+      <a href={paths.homePage}>
+        <h1 className="header__text">Andrea Prat</h1>
+      </a>
       <NavigationBar />
     </header>
   );
