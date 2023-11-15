@@ -1,8 +1,9 @@
+import Marquee from "react-fast-marquee";
 import { Helmet } from "react-helmet";
 import Typewriter from "typewriter-effect";
-import "./HomePage.css";
-import Marquee from "react-fast-marquee";
 import Day from "../../components/Day/Day";
+import "./HomePage.css";
+import paths from "../../routers/paths/paths";
 
 const HomePage = (): React.ReactElement => {
   return (
@@ -22,6 +23,7 @@ const HomePage = (): React.ReactElement => {
                 <Typewriter
                   options={{
                     strings: [
+                      "I always drink a cup of tea in the morning 🍵",
                       "world traveller 🌏",
                       "postcard lover 📬",
                       "two-planker 🎿",
@@ -38,7 +40,7 @@ const HomePage = (): React.ReactElement => {
                 />
               </p>
               <p className="home-page__presentation">
-                I am passionate about the use of
+                {`I'm passionate about the use of`}
                 <em className="is-colored">
                   {["c", "o", "l", "o", "r"].map((character, idx) => (
                     <span key={idx}>{character}</span>
@@ -47,6 +49,12 @@ const HomePage = (): React.ReactElement => {
                 in projects and being able to work with creativity in all areas:
                 design, illustration and code.
               </p>
+              <a
+                href={paths.aboutPage}
+                className="anchor anchor__gradient--large"
+              >
+                Tell me more!
+              </a>
             </div>
           </div>
           <div className="home-page__block">

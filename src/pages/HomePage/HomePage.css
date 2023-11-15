@@ -1,5 +1,6 @@
 .home-page {
   padding: 100px 0;
+  background-color: #fcf6ee;
 }
 
 .home-page__container {
@@ -25,6 +26,8 @@
   color: var(--color-violet-dark);
   padding: 50px 0 20px 0;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
 .home-page__salutation {
@@ -46,4 +49,31 @@
   font-size: 1.8rem;
   color: var(--color-violet-more-dark);
   padding-bottom: 15px;
+}
+
+.anchor {
+  cursor: pointer;
+  font: inherit;
+  background-color: transparent;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  color: var(--color-violet-more-dark);
+}
+
+.anchor__gradient--large {
+  background: var(--color-blueGreenGradient);
+  border-radius: 6px;
+  border: none;
+  color: var(--color-violet-more-dark);
+  width: 130px;
+  margin-top: 23px;
+  padding: 10px;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.anchor__gradient--large:hover {
+  background: var(--color-redYellowGradient);
+  padding: 10px;
 }
