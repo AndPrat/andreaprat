@@ -3,4 +3,5 @@ export interface PathsStrucuture {
   homePage: string;
   contactPage: string;
   portfolioPage: string;
+  codePage: string;
 }
