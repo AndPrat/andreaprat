@@ -4,6 +4,7 @@ import {
   LazyAboutPage,
   LazyContactPage,
   LazyHomePage,
+  LazyPortfolioPage,
 } from "../../pages/LazyPages/LazyPages";
 import paths from "../../routers/paths/paths";
 import Footer from "../Footer/Footer";
@@ -38,6 +39,14 @@ const App = (): React.ReactElement => {
             </Suspense>
           }
         />
+        <Route
+          path={paths.portfolioPage}
+          element={
+            <Suspense>
+              <LazyPortfolioPage />
+            </Suspense>
+          }
+        ></Route>
       </Routes>
       <Footer />
     </div>

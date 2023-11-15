@@ -7,8 +7,8 @@ const NavigationBar = (): React.ReactElement => {
     <nav className="navigation">
       <ul className="navigation__list">
         <li>
-          <NavLink to="" className="navigation__link">
-            Illustration and Design
+          <NavLink to={paths.portfolioPage} className="navigation__link">
+            Portfolio
           </NavLink>
           <NavLink to="" className="navigation__link">
             Code

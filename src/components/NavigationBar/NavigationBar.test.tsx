@@ -4,8 +4,8 @@ import NavigationBar from "./NavigationBar";
 
 describe("Given a NavigationBar component", () => {
   describe("When is rendered", () => {
-    test("Then it should have a link with a text 'Illustration and Design'", () => {
-      const expectedText = "Illustration and Design";
+    test("Then it should have a link with a text 'Portfolio'", () => {
+      const expectedText = "Portfolio";
 
       render(
         <BrowserRouter>
