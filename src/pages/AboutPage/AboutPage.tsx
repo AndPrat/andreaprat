@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
-import "./AboutPage.css";
 import { iconDiamond } from "../../icons/icons";
-import Button from "../../components/Button/Button";
+import "./AboutPage.css";
 
 const AboutPage = (): React.ReactElement => {
   return (
@@ -35,7 +34,11 @@ const AboutPage = (): React.ReactElement => {
                 Look for a designer with a broad skill set ranging from
                 developer web to graphic designer & illustration.
               </p>
-              <Button className="button button__gradient">{`Let's talk!`}</Button>
+              <a
+                href="mailto:hello@andreaprat.cat"
+                data-label="hello@andreaprat.cat"
+                className="anchor anchor__gradient--large"
+              >{`Let's talk!`}</a>
             </div>
           </div>
         </div>
@@ -54,7 +57,7 @@ const AboutPage = (): React.ReactElement => {
           <div className="about-page__block">
             <h3 className="about-page__title-secction-secundary">Mini CV</h3>
             <a
-              className="button button__gradient"
+              className="anchor anchor__gradient--large"
               href="https://www.linkedin.com/in/andreaprat/"
             >{`Linkedin`}</a>
           </div>
