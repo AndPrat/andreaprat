@@ -11,7 +11,7 @@ const PorfolioPage = (): React.ReactElement => {
       </Helmet>
       <div className="portfolio-page">
         <div className="container container--flex portfolio-page__container">
-          <div className="home-page__block">
+          <div className="portfolio-page__block">
             <h2 className="portfolio-page__title">Illustration and Design</h2>
             <h3 className="portfolio-page__title-secction">Portfolio</h3>
           </div>

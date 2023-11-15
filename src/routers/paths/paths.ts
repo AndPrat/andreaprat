@@ -5,6 +5,7 @@ const paths: PathsStrucuture = {
   homePage: "/home",
   contactPage: "/contact",
   portfolioPage: "/portfolio",
+  codePage: "/code",
 };
 
 export default paths;
