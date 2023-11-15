@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import {
   LazyAboutPage,
+  LazyCodePage,
   LazyContactPage,
   LazyHomePage,
   LazyPortfolioPage,
@@ -46,7 +47,15 @@ const App = (): React.ReactElement => {
               <LazyPortfolioPage />
             </Suspense>
           }
-        ></Route>
+        />
+        <Route
+          path={paths.codePage}
+          element={
+            <Suspense>
+              <LazyCodePage />
+            </Suspense>
+          }
+        />
       </Routes>
       <Footer />
     </div>

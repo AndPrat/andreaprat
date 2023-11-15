@@ -11,3 +11,5 @@ export const LazyContactPage = lazy(
 export const LazyPortfolioPage = lazy(
   () => import("../PortfolioPage/PortfolioPage.js"),
 );
+
+export const LazyCodePage = lazy(() => import("../CodePage/CodePage.js"));
