@@ -21,7 +21,7 @@ const ContactForm = ({
   const [newMessage, setNewMessage] =
     useState<Partial<Message>>(initalMessageData);
 
-  const [disabled, setDisabled] = useState(true);
+  const [isSubmittable, setIsSubmittable] = useState(false);
 
   const newMessageForm = (
     event:
@@ -34,18 +34,13 @@ const ContactForm = ({
     }));
   };
 
-  const submitForm = async (event: React.FormEvent<HTMLFormElement>) => {
+  const submitForm = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
     actionOnSubmit(newMessage);
   };
 
   useEffect(() => {
-    setDisabled(
-      Object.values(newMessage).every((value) => {
-        return Boolean(value);
-      }),
-    );
+    setIsSubmittable(Object.values(newMessage).every((value) => value !== ""));
   }, [newMessage]);
 
   return (
@@ -120,7 +115,7 @@ const ContactForm = ({
         <Button
           className="button button__gradient--large"
           type="submit"
-          disabled={disabled}
+          disabled={!isSubmittable ? true : false}
         >
           Send email!
         </Button>
