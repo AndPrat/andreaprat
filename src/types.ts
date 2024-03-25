@@ -5,3 +5,9 @@ export interface Message {
   subject: string;
   message: string;
 }
+
+export interface MessageApi {
+  messages: MessageApi[];
+}
+
+export interface MessageApi extends Partial<Message> {}
