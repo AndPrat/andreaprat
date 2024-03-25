@@ -1,7 +1,14 @@
 import { Helmet } from "react-helmet";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import sendEmail from "../../hooks/useMessageApi.js";
+import { Message } from "../../types.js";
 import "./ContactPage.css";
 
 const ContactPage = (): React.ReactElement => {
+  const actionOnSubmit = async (newMessageToRecived: Partial<Message>) => {
+    sendEmail(newMessageToRecived);
+  };
+
   return (
     <>
       <Helmet>
@@ -21,7 +28,9 @@ const ContactPage = (): React.ReactElement => {
                 hello@andreaprat.cat
               </span>
               <div className="contact-page__block">
-                <div className="contact-page__block--mini"></div>
+                <div className="contact-page__block--mini">
+                  <ContactForm actionOnSubmit={actionOnSubmit} />
+                </div>
               </div>
             </div>
           </div>

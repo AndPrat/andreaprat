@@ -59,6 +59,8 @@ const AboutPage = (): React.ReactElement => {
             <a
               className="anchor anchor__gradient--large"
               href="https://www.linkedin.com/in/andreaprat/"
+              target="_blank"
+              rel="noreferrer nofollow"
             >{`Linkedin`}</a>
           </div>
         </div>
