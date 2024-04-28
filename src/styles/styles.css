@@ -25,6 +25,10 @@ body {
   margin: 0;
 }
 
+main {
+  padding-top: 76px;
+}
+
 html {
   font-family: var(--font-text);
 }
@@ -60,6 +64,12 @@ input {
 
 p {
   margin: 0;
+}
+
+img {
+  object-fit: contain;
+  height: auto;
+  width: 100%;
 }
 
 .container {
