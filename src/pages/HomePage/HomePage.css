@@ -13,6 +13,14 @@
   width: 100%;
 }
 
+.home-page__block--50 {
+  width: 50%;
+}
+
+.home-page__block--image {
+  margin-left: -130px;
+}
+
 .home-page__block--mini {
   display: flex;
   flex-direction: column;
@@ -76,4 +84,13 @@
 .anchor__gradient--large:hover {
   background: var(--color-redYellowGradient);
   padding: 10px;
+}
+
+.is-colored {
+  background: linear-gradient(45deg, #d79922, #ff6d6d, #569aff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 1.1em;
 }
