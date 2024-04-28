@@ -31,6 +31,7 @@
   position: relative;
   top: -60px;
   margin: 40px;
+  max-width: 300px;
 }
 
 .about-page__title-secction {
@@ -39,6 +40,10 @@
   letter-spacing: 2px;
   color: var(--color-yellow);
   padding: 70px 0 8px 0;
+}
+
+.skills--block {
+  margin-left: 30px;
 }
 
 .about-page__title-important {
@@ -50,7 +55,7 @@
 }
 
 .about-page__information-important {
-  width: 500px;
+  width: 400px;
   font-size: 1rem;
   color: var(--color-violet-dark);
   border: 2px solid var(--color-violet-light);
@@ -91,4 +96,20 @@
 .anchor__gradient--large:hover {
   background: var(--color-redYellowGradient);
   padding: 10px;
+}
+
+.about-page__skills {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  color: var(--color-violet-dark);
+}
+
+.about-page__miniCV {
+  display: flex;
+  align-items: center;
+  color: var(--color-violet-dark);
+  font-size: 0.9rem;
+  line-height: 23px;
+  width: 600px;
 }
