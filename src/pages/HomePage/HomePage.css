@@ -5,6 +5,11 @@
 
 .home-page__container {
   justify-content: center;
+  align-items: center;
+}
+
+.home-page__section {
+  padding-top: 100px;
 }
 
 .home-page__block {
@@ -18,7 +23,9 @@
 }
 
 .home-page__block--image {
-  margin-left: -130px;
+  margin-left: -10px;
+  padding-left: 20px;
+  max-width: 600px;
 }
 
 .home-page__block--mini {
@@ -46,14 +53,14 @@
 }
 
 .home-page__presentation {
-  width: 600px;
+  max-width: 600px;
   font-size: 1.3rem;
   color: var(--color-violet-dark);
   padding-bottom: 10px;
 }
 
 .home-page__presentation--change {
-  width: 500px;
+  max-width: 500px;
   font-size: 1.8rem;
   color: var(--color-violet-more-dark);
   padding-bottom: 15px;
@@ -93,4 +100,14 @@
   -webkit-text-fill-color: transparent;
   font-weight: 800;
   font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .home-page__block--50 {
+    width: 100%;
+  }
+
+  .home-page__block--image {
+    margin-left: 0px;
+  }
 }
