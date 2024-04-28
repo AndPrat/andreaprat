@@ -14,7 +14,7 @@ const HomePage = (): React.ReactElement => {
         <meta name="description" content="Home of Andrea Prat web" />
       </Helmet>
       <main className="home-page">
-        <section>
+        <section className="home-page__section">
           <div className="container container--flex home-page__container">
             <div className="home-page__block home-page__block--50">
               <div className="home-page__block--mini">
