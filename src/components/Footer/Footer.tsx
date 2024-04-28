@@ -30,7 +30,11 @@ const Footer = (): React.ReactElement => {
             </a>
           </li>
           <li className="footer__information">
-            <a href="/" title="Contact Andrea Prat" className="footer__links">
+            <a
+              href={paths.homePage}
+              title="Contact Andrea Prat"
+              className="footer__links"
+            >
               Contact
             </a>
           </li>
@@ -88,7 +92,7 @@ const Footer = (): React.ReactElement => {
       </div>
       <ul className="footer__conditions">
         <li className="footer__conditions-information">
-          © 2023. All rights reserved.
+          © 2024. All rights reserved.
         </li>
         <li className="footer__conditions-information">
           Developed in Catalonia with {iconHeart}
