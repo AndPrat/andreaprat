@@ -1,9 +1,22 @@
 .about-page {
   padding: 100px 0;
 }
+.about-page__block--header {
+  padding-left: 20px;
+  max-width: 600px;
+}
 
 .about-page__container {
   justify-content: center;
+}
+
+.about-page__section {
+  padding: 10px;
+}
+
+.about-page__section--skills {
+  background-color: #fcf6ee;
+  padding: 50px 0;
 }
 
 .about-page__block--mini {
@@ -20,7 +33,7 @@
 }
 
 .about-page__information {
-  width: 370px;
+  width: 100%;
   font-size: 1.1rem;
   color: var(--color-violet-dark);
 }
@@ -43,24 +56,37 @@
 }
 
 .skills--block {
-  margin-left: 30px;
+  padding: 10px;
+}
+
+.about-page--skills {
+  margin: 0 -10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-page__title-important {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-family: var(--font-titles);
+  letter-spacing: 3px;
   color: var(--color-violet-dark);
+  padding: 50px 0 20px 0;
+  text-transform: uppercase;
   display: flex;
-  align-items: center;
-  font-weight: 700px;
+  justify-content: center;
 }
 
 .about-page__information-important {
-  width: 400px;
   font-size: 1rem;
   color: var(--color-violet-dark);
   border: 2px solid var(--color-violet-light);
   border-radius: 10px;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-page__title-secction-secundary {
@@ -69,6 +95,7 @@
   letter-spacing: 2px;
   color: var(--color-yellow);
   padding: 50px 0 30px 0;
+  width: 100%;
 }
 
 .anchor {
@@ -86,7 +113,7 @@
   border-radius: 6px;
   border: none;
   color: var(--color-violet-more-dark);
-  width: 105px;
+  width: 20%;
   margin-top: 30px;
   padding: 10px;
   transition: all;
@@ -99,17 +126,66 @@
 }
 
 .about-page__skills {
-  display: flex;
-  align-items: center;
-  line-height: 30px;
   color: var(--color-violet-dark);
+  width: 25%;
+  padding-right: 20px;
 }
 
 .about-page__miniCV {
   display: flex;
-  align-items: center;
   color: var(--color-violet-dark);
   font-size: 0.9rem;
   line-height: 23px;
-  width: 600px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.about-page__skills--title {
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
+}
+
+.about-page__skills--information {
+  padding-left: 25px;
+  padding-bottom: 15px;
+  padding-top: 3px;
+  font-size: 0.85rem;
+}
+
+.about-page__skills--icon {
+  padding-right: 6px;
+  color: var(--color-yellow);
+}
+
+.about-page__miniCV--title {
+  font-size: 1.05rem;
+}
+
+.about-page__miniCV--information {
+  font-size: 0.99rem;
+}
+
+.about-page__miniCV--works {
+  font-size: 0.8rem;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-page__skills {
+    width: 100%;
+  }
+
+  .skills--block {
+    width: 100%;
+  }
+
+  .about-page__information {
+    width: 100%;
+  }
+
+  .anchor__gradient--large {
+    width: 80%;
+  }
 }
