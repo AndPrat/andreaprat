@@ -137,7 +137,6 @@
   font-size: 0.9rem;
   line-height: 23px;
   width: 100%;
-  display: flex;
   flex-direction: column;
 }
 
