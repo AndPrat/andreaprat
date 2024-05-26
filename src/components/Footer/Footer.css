@@ -56,3 +56,9 @@
   align-items: center;
   padding: 0 50px 10px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__section {
+    width: 100%;
+  }
+}
