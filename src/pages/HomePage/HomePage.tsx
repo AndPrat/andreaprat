@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Typewriter from "typewriter-effect";
 import "./HomePage.css";
 import paths from "../../routers/paths/paths";
+import PersonalProjects from "../../components/PersonalProjects/PersonalProjects";
 
 const HomePage = (): React.ReactElement => {
   return (
@@ -80,9 +81,7 @@ const HomePage = (): React.ReactElement => {
               </div>
             </div>
             <div className="home-page__block">
-              <div className="home-page__block--mini">
-                <h2 className="home-page__title">Personal projects</h2>
-              </div>
+              <PersonalProjects />
             </div>
           </div>
         </section>
