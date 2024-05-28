@@ -1,0 +1,51 @@
+.personalproject {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.personalproject__secction {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.personalproject__secction--projects {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.personalproject__title {
+  font-size: 1.3rem;
+  font-family: var(--font-titles);
+  letter-spacing: 3px;
+  color: var(--color-violet-dark);
+  padding: 50px 0 20px 0;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.personalproject__image {
+  max-width: 150px;
+  max-height: 80px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 20px 60px;
+}
+
+.personalproject__image--link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .personalproject__image {
+    max-width: 150px;
+  }
+}
