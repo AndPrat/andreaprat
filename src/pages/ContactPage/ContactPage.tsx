@@ -22,7 +22,7 @@ const ContactPage = (): React.ReactElement => {
             <div className="contact-page__block--mini">
               <h3 className="contact-page__title-secction">CONTACT</h3>
               <h2 className="contact-page__title">Get in touch!</h2>
-              <p className="contact-page__information">{`Wanna get ahold of me? Dropping a line to say g'day? Got a project in mind? Ask for my resume? We can build something amazing together?`}</p>
+              <p className="contact-page__information">{`Do you want to get ahold of me? Dropping a line to say good day? Got a project in mind? Ask for my resume? We can build something amazing together!`}</p>
               <p className="contact-page__information">{`I'd love to hear from you! Just, fill out the form below or send me an email and I'll get back to you as soon as possible!`}</p>
               <span className="contact-page__title-important">
                 hello@andreaprat.cat
