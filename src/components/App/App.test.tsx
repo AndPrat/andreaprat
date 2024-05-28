@@ -5,6 +5,13 @@ import App from "./App";
 describe("Given an App component", () => {
   describe("When it is rendered", () => {
     test("Then it should show a NavLink with 'Portfolio' text", () => {
+      const ResizeObserverMock = vi.fn(() => ({
+        observe: vi.fn(),
+        unobserve: vi.fn(),
+        disconnect: vi.fn(),
+      }));
+
+      vi.stubGlobal("ResizeObserver", ResizeObserverMock);
       const expectedText = "Portfolio";
 
       render(
@@ -13,7 +20,9 @@ describe("Given an App component", () => {
         </BrowserRouter>,
       );
 
-      const navigationLink = screen.getByRole("link", { name: expectedText });
+      const navigationLink = screen.getByRole("link", {
+        name: expectedText,
+      });
 
       expect(navigationLink).toBeInTheDocument();
     });
