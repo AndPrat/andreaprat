@@ -12,6 +12,24 @@
   background-color: #ffff;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.header__container {
+  justify-content: center;
+  align-items: center;
+}
+
+.header__block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header__block--mini {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .header__text {
@@ -29,4 +47,5 @@
   height: 4px;
   position: absolute;
   top: 0;
+  left: 0;
 }
