@@ -1,7 +1,5 @@
-import Marquee from "react-fast-marquee";
 import { Helmet } from "react-helmet";
 import Typewriter from "typewriter-effect";
-import Day from "../../components/Day/Day";
 import "./HomePage.css";
 import paths from "../../routers/paths/paths";
 
@@ -18,7 +16,7 @@ const HomePage = (): React.ReactElement => {
           <div className="container container--flex home-page__container">
             <div className="home-page__block home-page__block--50">
               <div className="home-page__block--mini">
-                <h2 className="home-page__salutation">{`G'day! I'm Andrea`}</h2>
+                <h2 className="home-page__salutation">{`Hello! I'm Andrea!`}</h2>
                 <p className="home-page__presentation">{`I'm a creative frontend Developer, graphic designer & illustrator based in Barcelona and`}</p>
                 <p className="home-page__presentation--change">
                   <Typewriter
@@ -46,34 +44,30 @@ const HomePage = (): React.ReactElement => {
                   able to work with creativity in all areas: design,
                   illustration and code.
                 </p>
-                <a
-                  href={paths.aboutPage}
-                  className="anchor anchor__gradient--large"
-                >
-                  Read more!
-                </a>
+                <div className="anchor anchor__container">
+                  <a
+                    href={paths.aboutPage}
+                    className="anchor anchor__gradient--large"
+                  >
+                    Know more about!
+                  </a>
+                  <a
+                    href={paths.portfolioPage}
+                    className="anchor anchor__gradient--large"
+                  >
+                    See projects
+                  </a>
+                </div>
               </div>
             </div>
             <div className="home-page__block home-page__block--50">
               <div className="home-page__block--image">
                 <img
-                  src="/images/postcards.png"
+                  src="/images/andreaprat_postcards.png"
                   alt="Postcards illustrations"
                   width={800}
                   className="about-page__photo"
                 />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="container--flex home-page__container">
-            <div className="home-page__block">
-              <div className="home-page__block--mini">
-                <Marquee autoFill={true}>
-                  {" "}
-                  <Day />
-                </Marquee>
               </div>
             </div>
           </div>
