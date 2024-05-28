@@ -47,7 +47,8 @@
 
 .home-page__salutation {
   font-size: 3rem;
-  letter-spacing: 3px;
+  font-family: var(--font-titles);
+  letter-spacing: 5px;
   color: var(--color-violet-dark);
   padding-bottom: 15px;
 }
@@ -70,10 +71,14 @@
   cursor: pointer;
   font: inherit;
   background-color: transparent;
-  padding: 10px;
   justify-content: center;
   display: flex;
   color: var(--color-violet-more-dark);
+}
+
+.anchor__container {
+  display: flex;
+  justify-content: left;
 }
 
 .anchor__gradient--large {
@@ -81,8 +86,9 @@
   border-radius: 6px;
   border: none;
   color: var(--color-violet-more-dark);
-  width: 130px;
+  width: 30%;
   margin-top: 23px;
+  margin-right: 20px;
   padding: 10px;
   transition: all;
   transition-duration: 300ms;
@@ -109,5 +115,13 @@
 
   .home-page__block--image {
     margin-left: 0px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .anchor__gradient--large {
+    width: 60%;
+    font-size: 0.95rem;
   }
 }

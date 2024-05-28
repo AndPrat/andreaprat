@@ -14,7 +14,7 @@ beforeAll(() => {
 describe("Given the HomePage component", () => {
   describe("When it is rendered", () => {
     test("Then it show should a headings with the texts 'G'day! I'm Andrea', 'Some of my latest work' and 'Personal projects'", () => {
-      const expectedHeadingOne = "G'day! I'm Andrea";
+      const expectedHeadingOne = "Hello! I'm Andrea!";
       const expectedHeadingTwo = "Some of my latest work";
       const expectedHeadingThree = "Personal projects";
 
