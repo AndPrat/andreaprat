@@ -1,6 +1,7 @@
 import { PortfolioData } from "./dataPortfolioTypes";
 
 export const ditifet: PortfolioData = {
+  id: "01",
   name: "Dit&Fet!",
   description: "",
   category: [],
@@ -10,6 +11,7 @@ export const ditifet: PortfolioData = {
 };
 
 export const liceuBarcelona: PortfolioData = {
+  id: "02",
   name: "Liceu de Barcelona",
   description: "",
   category: [],
@@ -19,6 +21,7 @@ export const liceuBarcelona: PortfolioData = {
 };
 
 export const cascanueces: PortfolioData = {
+  id: "03",
   name: "El Cascauneces",
   description: "",
   category: ["poster"],
@@ -28,6 +31,7 @@ export const cascanueces: PortfolioData = {
 };
 
 export const lighterMonster: PortfolioData = {
+  id: "04",
   name: "Lighter Mönster",
   description: "",
   category: [],
@@ -37,6 +41,7 @@ export const lighterMonster: PortfolioData = {
 };
 
 export const menstruation: PortfolioData = {
+  id: "05",
   name: "Dit&Fet!",
   description: "",
   category: [],
@@ -46,6 +51,7 @@ export const menstruation: PortfolioData = {
 };
 
 export const taichi: PortfolioData = {
+  id: "06",
   name: "Viure amb Taitxí!",
   description: "",
   category: [],
@@ -55,6 +61,7 @@ export const taichi: PortfolioData = {
 };
 
 export const cantirs: PortfolioData = {
+  id: "07",
   name: "Càntirarires",
   description: "",
   category: [],
@@ -64,6 +71,7 @@ export const cantirs: PortfolioData = {
 };
 
 export const vesaliusBeer: PortfolioData = {
+  id: "08",
   name: "Vesalius Beer",
   description: "",
   category: [],
@@ -73,6 +81,7 @@ export const vesaliusBeer: PortfolioData = {
 };
 
 export const nomadic: PortfolioData = {
+  id: "09",
   name: "Nomadic!",
   description: "",
   category: [],
