@@ -5,9 +5,11 @@ import {
 } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { messagesReducer } from "./message/messageSlice";
+import { portfolioProjectsReducer } from "./portfolioProjects/portfolioProjectsSlice";
 
 const rootReducer = combineReducers({
   messagesState: messagesReducer,
+  portfolioProjectsState: portfolioProjectsReducer,
 });
 
 export const setupStore = (preloadedState?: PreloadedState<RootState>) => {

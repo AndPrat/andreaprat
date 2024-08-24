@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import PorfolioPage from "./PortfolioPage";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "../../store";
 
 describe("Given a PortfolioPage component", () => {
   describe("When it is rendered", () => {
@@ -10,7 +12,9 @@ describe("Given a PortfolioPage component", () => {
 
       render(
         <BrowserRouter>
-          <PorfolioPage />
+          <Provider store={store}>
+            <PorfolioPage />
+          </Provider>
         </BrowserRouter>,
       );
 
