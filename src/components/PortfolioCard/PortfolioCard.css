@@ -1,0 +1,9 @@
+.portfoliocard__image {
+  margin-top: 8px;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
