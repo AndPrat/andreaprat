@@ -11,9 +11,12 @@ const portfolioProjectsSlice = createSlice({
   initialState: initialPortfolioProjectsState,
   reducers: {
     loadPortfolioProjects: (
-      _currentPortfolioProjectsState,
+      currentPortfolioProjectsState,
       action: PayloadAction<PortfolioData[]>,
-    ): PortfolioProjectsState => ({ portfolioProjects: action.payload }),
+    ): PortfolioProjectsState => ({
+      ...currentPortfolioProjectsState,
+      portfolioProjects: action.payload,
+    }),
   },
 });
 
