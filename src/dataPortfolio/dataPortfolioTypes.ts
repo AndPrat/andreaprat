@@ -3,7 +3,12 @@ export interface PortfolioData {
   name: string;
   category: string[];
   description: string;
-  Coverimage: string;
+  otherInformation?: string;
+  title1?: string;
+  title2?: string;
+  coverimage: string;
   image1: string;
   image2: string;
 }
+
+export type Portfolio = PortfolioData[];

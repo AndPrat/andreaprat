@@ -4,9 +4,10 @@ import PortfolioList from "../../components/PortfolioList/PortfolioList";
 import { useAppDispatch, useAppSelector } from "../../store";
 import { useEffect } from "react";
 import { loadPortfolioProjectsActionCreator } from "../../store/portfolioProjects/portfolioProjectsSlice";
+import portfolioProjects from "../../dataPortfolio/dataPortfolio";
 
 const PorfolioPage = (): React.ReactElement => {
-  const portfolioProjects = useAppSelector(
+  const projectsPorfolioProjects = useAppSelector(
     (state) => state.portfolioProjectsState.portfolioProjects,
   );
 
@@ -14,11 +15,12 @@ const PorfolioPage = (): React.ReactElement => {
 
   useEffect(() => {
     (async () => {
-      if (portfolioProjects) {
-        dispatch(loadPortfolioProjectsActionCreator(portfolioProjects));
+      const projects = portfolioProjects;
+      if (projects) {
+        dispatch(loadPortfolioProjectsActionCreator(projects));
       }
     })();
-  }, [dispatch, portfolioProjects]);
+  }, [dispatch]);
 
   return (
     <>
@@ -32,7 +34,7 @@ const PorfolioPage = (): React.ReactElement => {
           <div className="portfolio-page__block">
             <h2 className="portfolio-page__title">Illustration and Design</h2>
             <h3 className="portfolio-page__title-secction">Portfolio</h3>
-            <PortfolioList />
+            {projectsPorfolioProjects.length > 0 ? <PortfolioList /> : "Empty"}
           </div>
         </div>
       </div>

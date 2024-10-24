@@ -1,0 +1,29 @@
+.portfoliolist {
+}
+
+.portfoliolist__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.portfoliolist__project {
+  flex: 20%;
+  max-width: 25%;
+  padding: 5px 8px;
+}
+
+@media (max-width: 1200px) {
+  .portfoliolist__project {
+    flex: 40%;
+    flex-wrap: wrap;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfoliolist__project {
+    flex: 50%;
+    max-width: 100%;
+  }
+}
